@@ -33,7 +33,7 @@ You can set up MongoDB by following the [MongoDB installation guide](https://doc
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/project-name.git
+git clone https://github.com/Ejay02/releaf_be.git
 cd project-name
 ```
 
