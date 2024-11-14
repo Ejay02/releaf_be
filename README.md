@@ -158,9 +158,9 @@ You can access the full API documentation through Swagger at:
 
 - **Local (Development)**: [http://localhost:3000/api/docs](http://localhost:3000/api/docs)
 
-- **Dev (Development)**: [http://localhost:3000/api/docs](http://localhost:3000/api/docs)
+- **Dev (Development)**: [https://releaf-be.onrender.com/api/docs](https://releaf-be.onrender.com/api/docs)
 
-Swagger provides an interactive interface to explore and test the API endpoints. You can authorize requests by clicking on the **Authorize** button and entering the JWT token in the **Bearer** field.
+Swagger provides an interactive interface to explore and test the API endpoints. You can authorize requests by clicking the **Authorize** button and entering the JWT token in the **Bearer** field or use PostMan.
 
 For example, to test the **Login** endpoint:
 
