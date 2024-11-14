@@ -37,7 +37,6 @@ git clone https://github.com/Ejay02/releaf_be.git
 cd project-name
 ```
 
-````
 
 ### 2. Install dependencies
 
