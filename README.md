@@ -169,7 +169,7 @@ For example, to test the **Login** endpoint:
 - Copy that token and click **Authorize** at the top of the Swagger UI. Paste the token in the **Authorization** field and click **Authorize**.
 - Now you can test the protected endpoints with the authorized token.
 
----
+
 
 ## Environment Variables
 
@@ -180,7 +180,4 @@ Make sure you configure the following environment variables before running the a
 | `MONGODB_URI` | MongoDB connection URI, either local or cloud-based. |
 | `JWT_SECRET`  | The secret key used for signing JWT tokens.          |
 
----
 
-
-````
