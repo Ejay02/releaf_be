@@ -33,11 +33,10 @@ You can set up MongoDB by following the [MongoDB installation guide](https://doc
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/project-name.git
+git clone https://github.com/Ejay02/releaf_be.git
 cd project-name
 ```
 
-````
 
 ### 2. Install dependencies
 
@@ -158,9 +157,9 @@ You can access the full API documentation through Swagger at:
 
 - **Local (Development)**: [http://localhost:3000/api/docs](http://localhost:3000/api/docs)
 
-- **Dev (Development)**: [http://localhost:3000/api/docs](http://localhost:3000/api/docs)
+- **Dev (Development)**: [https://releaf-be.onrender.com/api/docs](https://releaf-be.onrender.com/api/docs)
 
-Swagger provides an interactive interface to explore and test the API endpoints. You can authorize requests by clicking on the **Authorize** button and entering the JWT token in the **Bearer** field.
+Swagger provides an interactive interface to explore and test the API endpoints. You can authorize requests by clicking the **Authorize** button and entering the JWT token in the **Bearer** field or use PostMan.
 
 For example, to test the **Login** endpoint:
 
@@ -170,7 +169,7 @@ For example, to test the **Login** endpoint:
 - Copy that token and click **Authorize** at the top of the Swagger UI. Paste the token in the **Authorization** field and click **Authorize**.
 - Now you can test the protected endpoints with the authorized token.
 
----
+
 
 ## Environment Variables
 
@@ -181,7 +180,4 @@ Make sure you configure the following environment variables before running the a
 | `MONGODB_URI` | MongoDB connection URI, either local or cloud-based. |
 | `JWT_SECRET`  | The secret key used for signing JWT tokens.          |
 
----
 
-
-````
