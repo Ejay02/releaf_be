@@ -53,12 +53,12 @@ export class UserService {
     // Generate JWT token
     const token = this.generateJwtToken(user.id, user.email);
 
-    return { token };
+    return { token, user };
   }
 
   // Generate a JWT token
   private generateJwtToken(userId: string, email: string) {
     const payload = { userId, email };
-    return jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '1h' });
+    return jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '7d' });
   }
 }

@@ -5,8 +5,16 @@ import { DocumentBuilder, SwaggerModule } from '@nestjs/swagger';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
+
+  // Global validation pipe
   app.useGlobalPipes(new ValidationPipe());
-  app.enableCors();
+
+  // enable CORS middleware
+  app.enableCors({
+    origin: '*', // Allow all origins
+    methods: 'GET, POST, PUT, DELETE', // Allow necessary HTTP methods
+    credentials: true, // Allow cookies and authorization headers
+  });
 
   const config = new DocumentBuilder()
     .setTitle('PKS Management API')
@@ -27,6 +35,10 @@ async function bootstrap() {
 
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('api/docs', app, document);
-  await app.listen(3000);
+
+  const port = process.env.PORT || 3000;
+  await app.listen(port);
+
+  console.log(`Application is running on: http://localhost:${port}`);
 }
 bootstrap();
